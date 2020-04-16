@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app = "LunchCheck">
+  <head>
+  	<meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  	<title>Check</title>
+  </head>
+  <body>
+     <div ng-controller = "LunchCheckController">    
+      Please enter items: 
+      <br>      
+     <div>
+      <input type="text"  ng-model="itemStrings">
+      <label> (Empty value with just commas is not allowed.)</label>
+      <br>
+      
+      <button ng-click = "checkItem()">Check If Too Much</button>   
+      <br>
+
+      <label ng-style = "textStyle.color">{{resultMsg}}</label>     
+
+      
+     </div>
+    
+  	</div>
+  </body>
+
+</html>
